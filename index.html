@@ -83,8 +83,13 @@
 
     table {
       width: 100%;
+      min-width: 900px;
       border-collapse: collapse;
       margin-top: 40px;
+    }
+
+    .table-wrapper{
+      width: 700px;
       overflow-x: auto;
     }
 
@@ -92,7 +97,6 @@
       border: 1px solid #1a4605;
       padding: 10px;
       text-align: center;
-      word-wrap: break-word;
     }
 
     th {
@@ -191,23 +195,25 @@
 
       <button type="submit">Submit</button>
       <div id="success-message">Thank you for submitting! Stay Safe!</div>
+    
+      <div class="table-wrapper">
+        <table id="healthTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Address</th>
+              <th>Vaccination</th>
+              <th>Symptoms</th>
+              <th>Last Checkup</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </form>
-
-    <table id="healthTable">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Gender</th>
-          <th>Address</th>
-          <th>Vaccination</th>
-          <th>Symptoms</th>
-          <th>Last Checkup</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
   </main>
 
   <script>
